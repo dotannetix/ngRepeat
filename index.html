@@ -8,8 +8,11 @@
 
 <body>
     <div ng-controller="main as vm">
-        <input ng-model="vm.myName" placeholder="enter your name">
-        <div> {{!vm.myName?"..." : "hello "+ vm.myName}}</div>
+        <ul>
+            <li ng-repeat="c in vm.colors" ng-style={color:c}>
+          {{$index}} {{c}}
+            </li>
+        </ul>
     </div>
     <script src="node_modules/angular/angular.js"></script>
     <script src="app/config.js"></script>

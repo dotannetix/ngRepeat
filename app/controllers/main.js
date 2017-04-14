@@ -6,15 +6,15 @@
         var vm = this;
         vm.colorsBox = ""
         vm.title = "hello from main"
+        vm.colors = ["red", "gray", "green", "blue", "yellow"];
+        var ul = document.getElementById("colorList");
         
-//        var result =document.getElementById("result");
-//        var text1= document.getElementById("text1");
-//        text1.onkeyup =function(event){
-//           // console.log(event.key)
-//          result.innerHTML="hello " +text1.value;
+        
+//        for (var i = 0; i < colors.length; i++) {
+//            var li = document.createElement("li");
+//            li.innerHTML = i+":" +colors[i];
+//            li.style.color=colors[i];
+//            ul.appendChild(li);
 //        }
-        
-        
-     
     }
 })();
